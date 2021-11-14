@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Assign2 {
+public class Assign2 {
     public static void main(String[] args) {
         int n;
         int a[] = new int[2];
@@ -9,7 +9,14 @@ class Assign2 {
         n = s.nextInt();
         System.out.println("Enter elements of array");
         for (int i = 0; i < n; i++) {
+            try
+            {
             a[i] = s.nextInt();
+            }
+            catch(Exception e)
+            {
+                System.out.println(e);
+            }
         }
         System.out.println("Enetr index");
         int i;
@@ -18,7 +25,7 @@ class Assign2 {
             System.out.println(a[i]);
             System.out.println("Succsessful");
         } catch (Exception e) {
-            System.out.println("Exception");
+            System.out.println(e);
         }
     }
 }
