@@ -1,4 +1,8 @@
-class MyNumber implements Runnable {
+/*Create a thread which prints 1 to 10.
+After printing 5, there should be a delay of 5000 milliseconds before printing 6.
+( Thread Control Mechanism concept)
+*/
+    class MyNumber implements Runnable {
     public void run() {
         try {
             for (int i = 1; i <= 10; i++) {
