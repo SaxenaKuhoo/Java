@@ -7,7 +7,7 @@ import java.sql.*;
 public class Q16_part1 {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/list","root","");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/table1","root","");
         Statement s = con.createStatement();
         ResultSet rs = s.executeQuery("select * from emp");
         while (rs.next()){
